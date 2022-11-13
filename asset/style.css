@@ -6,6 +6,9 @@
     --theme-font: 'Montserrat', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+  }
 
 header {
     display: flex;
@@ -16,21 +19,21 @@ header {
 }
 
 h1 {
-    height: 100px;
-    line-height: 100px;
+    height: 90px;
+    line-height: 90px;
     font-family: var(--title-font);
-    font-size: 400%;
+    font-size: 450%;
     background-color: var(--figure-bg-color);
-    padding-left: 15%;
-    padding-right: 5%;
-    margin: 1% 0;
+    padding-left: 6.5%;
+    padding-right: 2.5%;
+    margin: 1.5% 0;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     float: right;
-    min-width: 425px;
+    min-width: 475px;
     padding-right: 15%;
 }
 
@@ -49,21 +52,127 @@ class "theme-image" is a container holding the image and the text.*/
     position: relative;
 }
 
-.theme-title {
+.theme-image h2 {
     position: absolute;
     bottom: 15px;
     right: 30px;
+
     font-family: var(--theme-font);
     font-weight: 400;
     font-size: 120%;
+
     background-color: var(--figure-bg-color);
     padding: 0.5%;
+}
+
+/* biography section added a bio-photo of myself above 
+the introductory paragraph */
+
+.biography {
+    display: flex;
+    margin: 2%;
+
+}
+
+.work {
+    display: flex;
+    margin: 2%;
+
+}
+
+.contact {
+    display: flex;
+    height: 150px;
+    margin: 2%;
+}
+
+.title-aside {
+    width: 400px;
+    line-height: 150%;
+    margin-left: 1%;
+    padding-right: 2%;
+
+    background-color: bisque;
+
+    font-family: var(--theme-font);
+    font-weight: 700;
+    font-size: 200%;
+
+    border-right: solid;
+    border-right-width: 3px;
+
+    text-align: right;
+
+}
+
+.section-area-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(177, 169, 157);
+    width: 1100px;
+    margin-left: 2%;
+}
+
+.section-area-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(177, 169, 157);
+    width: 900px;
+    
+    margin-left: 2%;
+}
+
+.biography img {
+    width: 400px;
+    padding-bottom: 5%;
+}
+
+.biography p {
+    font-family: var(--theme-font);
+    line-height: 150%;
+}
+
+.section-area-2 img {
+    width: 100%;
+}
+
+
+.project img{
+    flex: 1;
+    padding-right: 0;
+   
+}
+
+.large img{
+    flex: 1;
+    padding-right: 0;
+   
 }
 
 
 
 
 
+
+.contact ul {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-right: 10%;
+}
+
+.contact a {
+    height: 30px;
+    line-height: 50px;
+    color: black;
+    font-family: var(--theme-font);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+}
 
 
 
@@ -89,6 +198,9 @@ class "theme-image" is a container holding the image and the text.*/
     }
 
     main {
-        max-width: 1200px;
+        max-width: 1100px;
     }
+
+    
+
 }
