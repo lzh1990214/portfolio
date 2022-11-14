@@ -1,15 +1,17 @@
 :root {
     --main-bg-color: #ffffff;
     --figure-bg-color: #71c6c6;
+    --figure-outline-color: #71c6c6;
     --theme-text: #71c6c6;
     --title-font: 'Allerta Stencil', sans-serif;
     --theme-font: 'Montserrat', sans-serif;
 }
 
+/*
 * {
     box-sizing: border-box;
-  }
-
+}
+*/
 header {
     display: flex;
     justify-content: space-between;
@@ -68,7 +70,7 @@ class "theme-image" is a container holding the image and the text.*/
 /* biography section added a bio-photo of myself above 
 the introductory paragraph */
 
-.biography {
+.about {
     display: flex;
     margin: 2%;
 
@@ -89,68 +91,99 @@ the introductory paragraph */
 .title-aside {
     width: 400px;
     line-height: 150%;
-    margin-left: 1%;
+    margin-left: 2%;
     padding-right: 2%;
-
     background-color: bisque;
-
     font-family: var(--theme-font);
     font-weight: 700;
     font-size: 200%;
-
     border-right: solid;
     border-right-width: 3px;
-
     text-align: right;
-
 }
 
-.section-area-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(177, 169, 157);
-    width: 1100px;
-    margin-left: 2%;
-}
+/* need to consolidate repetitive attribute in below 3 sections */
 
-.section-area-2 {
+.section-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(177, 169, 157);
     width: 900px;
-    
     margin-left: 2%;
 }
 
-.biography img {
-    width: 400px;
+.section-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(177, 169, 157);
+    width: 900px;
+    margin-left: 2%;
+}
+
+.section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(177, 169, 157);
+    width: 900px;
+    height: 300px;
+    margin-left: 2%;
+}
+
+.about img {
+    width: auto;
     padding-bottom: 5%;
 }
 
-.biography p {
+.about p {
     font-family: var(--theme-font);
     line-height: 150%;
 }
 
-.section-area-2 img {
+/* work section configuration */
+
+/* what does the below code do? */
+
+.section-work img {
     width: 100%;
 }
 
-
-.project img{
-    flex: 1;
-    padding-right: 0;
-   
+.large {
+    position: relative;
+    margin-bottom: 15px;
 }
 
-.large img{
-    flex: 1;
-    padding-right: 0;
-   
+.large ul {
+    background-color: var(--figure-bg-color);
+    position: absolute;
+    bottom: 30px;
+    padding: 5px 30px 5px 20px;
+    font-family: var(--theme-font);
+    line-height: 30px;
 }
 
+.large img {
+    border: solid 10px var(--figure-outline-color);
+}
+
+h3 {
+    font-size: 125%;
+}
+
+h4 {
+    font-size: 90%;
+    font-weight: 400;
+}
+
+
+/* maybe not necessary
+.project img {
+    flex: 0;
+    padding-right: 0;
+}
+*/
 
 
 
@@ -158,9 +191,8 @@ the introductory paragraph */
 
 .contact ul {
     display: flex;
-    justify-content: space-between;
-    float: right;
-    padding-right: 10%;
+    flex-wrap: wrap;
+    padding-right: 0%;
 }
 
 .contact a {
@@ -196,11 +228,16 @@ the introductory paragraph */
         margin-top: 6%;
         margin-bottom: 3%;
     }
+}
 
-    main {
-        max-width: 1100px;
+@media screen and (max-width: 600px) {
+
+    .contact {
+        height: 300px;
     }
 
-    
+    .contact ul {
+        flex-direction: column;
 
+    }
 }
