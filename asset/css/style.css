@@ -86,7 +86,9 @@ It only works when setting the image position as "relative". */
 property, I choose to keep them seperate to allow flexibility when
 calling elements under these classes later. */
 
-.about, .work, .contact {
+.about,
+.work,
+.contact {
     display: flex;
     margin: 2%;
 }
@@ -105,7 +107,9 @@ calling elements under these classes later. */
 }
 
 
-.section-about, .section-work, .section-contact {
+.section-about,
+.section-work,
+.section-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -331,7 +335,7 @@ website with a small device. */
     }
 
     h1 {
-        width: 100%;
+        font-size: 400%;
         height: auto;
         padding: 2% 2%;
         margin-bottom: 3%;
