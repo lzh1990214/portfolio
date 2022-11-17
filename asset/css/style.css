@@ -331,6 +331,7 @@ website with a small device. */
     }
 
     h1 {
+        width: 100%;
         height: auto;
         padding: 2% 2%;
         margin-bottom: 3%;
