@@ -84,7 +84,8 @@ It only works when setting the image position as "relative". */
 
 /* Even though classes "about", "work", and "contact" have the same
 property, I choose to keep them seperate to allow flexibility when
-calling elements under these classes later. */
+calling elements under these classes later. 
+*/
 
 .about,
 .work,
